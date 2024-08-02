@@ -1,12 +1,12 @@
 import Link from 'next/link';
 
-export default function Home() {
+export default function About() {
   return (
     <main>
       <section>
         <div>
-          <p>Home page</p>
-          <Link href='/about'>Go to About</Link>
+          <p>About Page</p>
+          <Link href={'/'}>Back to Home</Link>
         </div>
       </section>
     </main>

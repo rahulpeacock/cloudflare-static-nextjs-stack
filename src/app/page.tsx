@@ -6,7 +6,9 @@ export default function Home() {
       <section>
         <div>
           <p>Home page</p>
-          <Link href='/about'>Go to About</Link>
+          <Link href='/about' prefetch={false}>
+            Go to About
+          </Link>
         </div>
       </section>
     </main>

@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "serve out",
     "pages:dev": "wrangler pages dev out  --compatibility-date=2024-07-27x",
-    "format": "pnpm biome format --write ./src",
-    "lint": "pnpm biome lint ./src --apply",
-    "check": "pnpm biome check ./src --apply"
+    "format": "biome format --write ./src",
+    "lint": "biome lint --write ./src",
+    "check": "biome check --write ./src"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",

@@ -1,10 +1,7 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-  "organizeImports": {
-    "enabled": false
-  },
   "files": {
-    "ignore": [".next/**/*", ".wrangler/**/*", "out/**/*", "node_modules/**/*"]
+    "ignore": ["node_modules/**/*", "dist/**/*", ".next/**/*", "src/routeTree.gen.ts", ".vercel/**/*", "out/**/*"]
   },
   "vcs": {
     "enabled": true,
@@ -24,21 +21,33 @@
       "a11y": {
         "useKeyWithClickEvents": "off",
         "useKeyWithMouseEvents": "off"
+      },
+      "correctness": {
+        "noUnusedImports": "warn"
       }
-    },
-    "ignore": ["src/exceptions/errors.ts"]
+    }
   },
   "formatter": {
-    "ignore": ["configuration-schema.json"],
     "enabled": true,
     "indentStyle": "space",
-    "lineWidth": 150
+    "lineWidth": 150,
+    "lineEnding": "lf"
   },
   "javascript": {
     "formatter": {
       "quoteStyle": "single",
+      "trailingCommas": "all",
       "semicolons": "always",
       "jsxQuoteStyle": "single"
+    }
+  },
+  "css": {
+    "formatter": {
+      "enabled": true,
+      "indentStyle": "space"
+    },
+    "linter": {
+      "enabled": true
     }
   }
 }

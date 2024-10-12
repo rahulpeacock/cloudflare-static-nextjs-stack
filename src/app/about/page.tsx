@@ -5,7 +5,7 @@ export default function About() {
     <main>
       <section>
         <div>
-          <p>About Page</p>
+          <p>About Page with updated content</p>
           <Link href={'/'}>Back to Home</Link>
         </div>
       </section>

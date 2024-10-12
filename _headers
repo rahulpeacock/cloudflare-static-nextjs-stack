@@ -3,11 +3,11 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer
 
-/static/css/*
+/_next/static/css/*
   Cache-Control: public, max-age=2592000, s-maxage=2592000
   Content-Type: text/css
 
-/static/media/*
+/_next/static/media/*
   Cache-Control: public, max-age=31536000, s-maxage=31536000
   Content-Type: font/woff2
 

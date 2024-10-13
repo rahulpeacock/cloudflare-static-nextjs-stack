@@ -1,14 +1,10 @@
-import Link from 'next/link';
-
 export default function Home() {
   return (
     <main>
       <section>
         <div>
           <p>Home page</p>
-          <Link href='/about' prefetch={false}>
-            Go to About
-          </Link>
+          <a href='/about'>Go to About</a>
         </div>
       </section>
     </main>

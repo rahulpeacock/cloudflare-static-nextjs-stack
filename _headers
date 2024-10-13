@@ -4,15 +4,15 @@
   Referrer-Policy: no-referrer
 
 /_next/static/css/*
-  Cache-Control: public, max-age=2592000, s-maxage=2592000
+  Cache-Control: public, max-age=31536000, immutable
   Content-Type: text/css
 
 /_next/static/media/*
-  Cache-Control: public, max-age=31536000, s-maxage=31536000
+  Cache-Control: public, max-age=31536000, immutable
   Content-Type: font/woff2
 
 /_next/static/chunks/*
-  Cache-Control: public, max-age=31536000, s-maxage=31536000
+  Cache-Control: public, max-age=31536000, immutable
   Content-Type: application/javascript
 
 /static/*
